@@ -207,11 +207,26 @@ The zoos need to know their total animal population across the United States.
 //Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
-populationTotal = zooAnimals.reduce((total, company_name) => {
-      return total += company_name.population;
+
+// let populationTotal = zooAnimals.reduce((population, zooAnimal, index, zooAnimals) => {
+//   return population += zooAnimal.population;
+// },0);
+
+// console.log(populationTotal);
+
+// let ticketPriceTotal = [];
+// ticketPriceTotal = runners.reduce((total, company_name) => {
+//     return total += company_name.donation;
+// }, 0);
+
+// console.log(ticketPriceTotal);
+
+let populationTotal = 0;
+populationTotal = zooAnimals.reduce((total, animal_name) => {
+      return total += animal_name.population;
   }, 0);
 console.log(populationTotal);
+
 
 
 // let ticketPriceTotal = [];

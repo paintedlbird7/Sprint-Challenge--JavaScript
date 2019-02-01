@@ -1,4 +1,3 @@
- // Step 1: Declare the class keyword
  class CuboidMaker {
     // Step 2: Create a new constructor
 constructor(attributes) {
