@@ -43,7 +43,7 @@ const velociraptor = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(tyrannosaurus.weigh);
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
 console.log(velociraptor.diet);
@@ -112,15 +112,23 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. 
 //Create a new array called uni that contains them all. Log the result. */
-const uni = [];
 
-for (i = 0; i < graduates.length; i++) {
-  graduates[i].university;
-  if (university === Uni)
-    uni.push(graduates[i].university);
-}
+let uniUniversity = [];
+uniUniversity = graduates.filter((id) => { return id.university = 'Uni';});
+console.log(uniUniversity);
 
-console.log(uni);
+
+// const Uni = [];
+
+// for (i = 0; i < graduates.length; i++) {
+//   graduates[i].university;
+//   if (university === Uni)
+//     uni.push(graduates[i].university);
+// }
+
+// console.log(Uni);
+
+
 
 
 // ==== ADVANCED Array Methods ====
@@ -212,5 +220,5 @@ console.log(populationTotal);
 // console.log(ticketPriceTotal);
  
 
-//Stretch: If you haven't already, 
-//convert your array method callbacks into arrow functions.
+//Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+}
